@@ -117,7 +117,7 @@ srcset and width/height to use in the page. Photos already processed are skipped
 - Placeholders, Meet Gia: the FAQ question "Where is my data stored,
   and how do I delete it?" is hidden (`hidden` on its `details` in index.html) and waits for the answer from the product
   and legal teams: write the answer and remove `hidden`.
-- Meet Gia #how neighborhood photos: hiw-riverside, hiw-maple-heights, hiw-old-town (800px versions used in cards 02 and 03).
+- Meet Gia #how neighborhood photos: hiw-riverside, hiw-maple-heights, hiw-old-town (800px versions, card 02 only; card 03 has no photos).
 - Final photos (originals in assets/source/, optimized WebP + JPEG fallback in two sizes in assets/images/):
   Global Connections: gc-hero-workspace-800/-1600; How GLO Works: hgw-choice-panel-800 (600x800) / -1448 (full size).
   Introducing GLO final CTA: final-glo-800/-1600. Introducing GLO #what-glo-is (right of the text, 16:9): glo-resources-800/-1600.
