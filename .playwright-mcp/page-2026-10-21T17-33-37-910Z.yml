@@ -1,0 +1,525 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Glonari, back to top" [ref=e5] [cursor=pointer]:
+        - /url: "#what"
+        - generic [ref=e6]: Glonari
+      - navigation "Site" [ref=e7]:
+        - link "Meet Gia" [ref=e8] [cursor=pointer]:
+          - /url: index.html
+        - link "Introducing GLO" [ref=e9] [cursor=pointer]:
+          - /url: glo.html
+        - link "Global Connections" [ref=e10] [cursor=pointer]:
+          - /url: global-connections.html
+        - link "How GLO Works" [ref=e11] [cursor=pointer]:
+          - /url: how-glo-works.html
+      - link "Join the waitlist" [ref=e12] [cursor=pointer]:
+        - /url: "#join"
+    - navigation "On this page" [ref=e14]:
+      - link "What is Gia" [ref=e15] [cursor=pointer]:
+        - /url: "#what"
+      - link "How it works" [ref=e16] [cursor=pointer]:
+        - /url: "#how"
+      - link "How people use Gia" [ref=e17] [cursor=pointer]:
+        - /url: "#people"
+      - link "In action" [ref=e18] [cursor=pointer]:
+        - /url: "#in-action"
+      - link "Memory" [ref=e19] [cursor=pointer]:
+        - /url: "#memory"
+      - link "Control" [ref=e20] [cursor=pointer]:
+        - /url: "#control"
+      - link "Work" [ref=e21] [cursor=pointer]:
+        - /url: "#work"
+      - link "More power" [ref=e22] [cursor=pointer]:
+        - /url: "#more-power"
+  - main [ref=e24]:
+    - region "Meet Gia" [ref=e25]:
+      - generic [ref=e26]:
+        - heading "Your personal AI agent for thinking, deciding and getting things done." [level=1] [ref=e32]
+        - generic [aria-hidden] [ref=e33]: Scroll
+    - region [ref=e35]:
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - paragraph [ref=e38]: How it works
+          - heading "One request. Three simple steps." [level=2] [ref=e39]
+          - paragraph [ref=e40]: One conversation from start to finish. Here, a family planning a move asks Gia to compare three neighborhoods.
+        - list [ref=e41]:
+          - listitem [ref=e42]:
+            - generic [ref=e43]:
+              - generic [ref=e44]: "01"
+              - heading "Tell Gia what you need" [level=3] [ref=e45]
+              - paragraph [ref=e46]: In text, voice or video.
+            - 'generic "Example: the request" [ref=e47]':
+              - generic [aria-hidden] [ref=e48]:
+                - generic [ref=e49]: Text
+                - generic [ref=e52]: Voice
+                - generic [ref=e55]: Video
+              - generic [ref=e58]:
+                - paragraph [ref=e59]:
+                  - generic [ref=e60]: Help me compare three neighborhoods for our move.
+                - paragraph [ref=e64]:
+                  - generic [ref=e65]:
+                    - generic [ref=e66]: "Gia:"
+                    - text: I’ll compare commute, schools, housing costs, and lifestyle.
+              - generic [aria-hidden] [ref=e71]:
+                - generic [ref=e72]: +
+                - generic [ref=e73]: Type a message…
+                - generic [ref=e74]: ↑
+          - listitem [ref=e75]:
+            - generic [ref=e76]:
+              - generic [ref=e77]: "02"
+              - heading "Gia researches and organizes" [level=3] [ref=e78]
+              - paragraph [ref=e79]: She gathers what matters and prepares useful options.
+            - 'generic "Example: Gia researching" [ref=e80]':
+              - list [ref=e81]:
+                - listitem [ref=e82]:
+                  - text: Commute to downtown
+                  - generic [ref=e85]: Done
+                - listitem [ref=e86]:
+                  - text: Schools nearby
+                  - generic [ref=e89]: Done
+                - listitem [ref=e90]:
+                  - text: Housing costs
+                  - generic [ref=e93]: Done
+                - listitem [ref=e94]:
+                  - text: Parks, cafés, lifestyle
+                  - generic [ref=e97]: Researching
+              - list [ref=e99]:
+                - listitem [ref=e100]:
+                  - 'img "Riverside: city towers above a river at sunset" [ref=e101]'
+                  - generic [ref=e102]: Riverside
+                - listitem [ref=e103]:
+                  - 'img "Maple Heights: brick and shingle houses on a tree-lined street" [ref=e104]'
+                  - generic [ref=e105]: Maple Heights
+                - listitem [ref=e106]:
+                  - 'img "Old Town: a cobbled lane of stone houses with a clock tower" [ref=e107]'
+                  - generic [ref=e108]: Old Town
+          - listitem [ref=e109]:
+            - generic [ref=e110]:
+              - generic [ref=e111]: "03"
+              - heading "You review and decide" [level=3] [ref=e112]
+              - paragraph [ref=e113]: Approve, ask why, or change direction. You choose what happens next.
+            - 'generic "Example: comparison for review" [ref=e114]':
+              - list [ref=e115]:
+                - listitem [ref=e116]:
+                  - heading "Riverside" [level=4] [ref=e117]
+                  - generic [ref=e118]:
+                    - generic [ref=e119]:
+                      - term [ref=e120]:
+                        - generic [ref=e123]: Commute
+                      - definition [ref=e124]: 32 min
+                    - generic [ref=e125]:
+                      - term [ref=e126]:
+                        - generic [ref=e129]: Schools
+                      - definition [ref=e130]: "8.6"
+                    - generic [ref=e131]:
+                      - term [ref=e132]:
+                        - generic [ref=e135]: Avg. rent
+                      - definition [ref=e136]: $2,450
+                    - generic [ref=e137]:
+                      - term [ref=e138]:
+                        - generic [ref=e141]: Walkability
+                      - definition [ref=e142]: High
+                - listitem [ref=e143]:
+                  - heading "Maple Heights" [level=4] [ref=e144]
+                  - generic [ref=e145]:
+                    - generic [ref=e146]:
+                      - term [ref=e147]:
+                        - generic [ref=e150]: Commute
+                      - definition [ref=e151]: 24 min
+                    - generic [ref=e152]:
+                      - term [ref=e153]:
+                        - generic [ref=e156]: Schools
+                      - definition [ref=e157]: "7.9"
+                    - generic [ref=e158]:
+                      - term [ref=e159]:
+                        - generic [ref=e162]: Avg. rent
+                      - definition [ref=e163]: $2,780
+                    - generic [ref=e164]:
+                      - term [ref=e165]:
+                        - generic [ref=e168]: Walkability
+                      - definition [ref=e169]: Medium
+                - listitem [ref=e170]:
+                  - heading "Old Town" [level=4] [ref=e171]
+                  - generic [ref=e172]:
+                    - generic [ref=e173]:
+                      - term [ref=e174]:
+                        - generic [ref=e177]: Commute
+                      - definition [ref=e178]: 41 min
+                    - generic [ref=e179]:
+                      - term [ref=e180]:
+                        - generic [ref=e183]: Schools
+                      - definition [ref=e184]: "7.2"
+                    - generic [ref=e185]:
+                      - term [ref=e186]:
+                        - generic [ref=e189]: Avg. rent
+                      - definition [ref=e190]: $2,190
+                    - generic [ref=e191]:
+                      - term [ref=e192]:
+                        - generic [ref=e195]: Walkability
+                      - definition [ref=e196]: Very high
+              - generic [ref=e197]:
+                - generic [ref=e198] [cursor=pointer]:
+                  - text: Approve shortlist
+                  - generic [aria-hidden] [ref=e199]: →
+                - generic [ref=e200] [cursor=pointer]: Ask Gia why
+    - region [ref=e201]:
+      - generic [ref=e202]:
+        - generic [ref=e203]:
+          - heading "More than answers. A Gia that works with you." [level=2] [ref=e204]:
+            - text: More than answers.
+            - generic [ref=e205]: A Gia that works with you.
+          - list [ref=e206]:
+            - listitem [ref=e207]:
+              - heading "She remembers what matters." [level=3] [ref=e208]
+              - paragraph [ref=e209]: So you don’t have to start over every time.
+            - listitem [ref=e210]:
+              - heading "She helps you decide." [level=3] [ref=e211]
+              - paragraph [ref=e212]: She researches, compares and brings you clear options.
+            - listitem [ref=e213]:
+              - heading "She gets things done." [level=3] [ref=e214]
+              - paragraph [ref=e215]: With your direction and approval, she can carry the work forward.
+          - paragraph [ref=e216]: You stay in control.
+        - figure [ref=e217]
+    - region [ref=e220]:
+      - generic [ref=e221]:
+        - generic [ref=e222]:
+          - paragraph [ref=e223]: How people use Gia
+          - heading "Different lives. One Gia." [level=2] [ref=e224]
+          - paragraph [ref=e225]: Not everyone uses her the same way. She helps with the thinking, organizing and follow-through each person already needs.
+        - generic [ref=e226]:
+          - figure [ref=e227]:
+            - img "A man at an outdoor table at sunset checks his phone, with Gia's executive summary open on his laptop" [ref=e229]
+            - generic [ref=e230]:
+              - heading "The busy professional" [level=3] [ref=e231]
+              - paragraph [ref=e232]: Too much to manage. Not enough time.
+              - paragraph [ref=e233]: Gia can prepare briefings, organize travel, research companies, keep track of open questions and turn notes into clear next steps.
+          - figure [ref=e234]:
+            - img "A couple at home in the evening compares house listings with Gia on a tablet, brochures and a floor plan on the table" [ref=e236]
+            - generic [ref=e237]:
+              - heading "The future builder" [level=3] [ref=e238]
+              - paragraph [ref=e239]: Buying a home. Moving. Investing. Planning what comes next.
+              - paragraph [ref=e240]: Gia can gather information, compare options, summarize complex documents, remember decisions and help model scenarios without losing the thread.
+          - figure [ref=e241]:
+            - img "A woman relaxing on her sofa talks with Gia on a tablet about ideas from her notebook" [ref=e243]
+            - generic [ref=e244]:
+              - heading "The thinker & explorer" [level=3] [ref=e245]
+              - paragraph [ref=e246]: Not another search result. A conversation that remembers where you left off.
+              - paragraph [ref=e247]: Think through an idea, brainstorm, plan leisure time or explore possibilities without starting from zero.
+    - region [ref=e248]:
+      - generic [ref=e250]:
+        - generic [ref=e251]:
+          - generic [ref=e252]:
+            - paragraph [ref=e253]: See Gia in action
+            - heading "From a messy situation to a clear next step." [level=2] [ref=e254]
+            - paragraph [ref=e255]: "One real scenario: your flight to New York was changed. Nothing is rebooked until you say so."
+          - list [ref=e256]:
+            - listitem [ref=e257]:
+              - button "01 You ask “My flight to New York was changed.” That's all Gia needs to start." [ref=e258] [cursor=pointer]:
+                - generic [ref=e259]: "01"
+                - generic [ref=e260]: You ask
+                - generic [ref=e261]: “My flight to New York was changed.” That's all Gia needs to start.
+            - listitem [ref=e262]:
+              - button "02 Gia researches She checks same-day flights, fares and connection times on your route." [ref=e263] [cursor=pointer]:
+                - generic [ref=e264]: "02"
+                - generic [ref=e265]: Gia researches
+                - generic [ref=e266]: She checks same-day flights, fares and connection times on your route.
+            - listitem [ref=e267]:
+              - 'button "03 You see the options Two alternatives with the trade-offs laid out: time against money." [ref=e268] [cursor=pointer]':
+                - generic [ref=e269]: "03"
+                - generic [ref=e270]: You see the options
+                - generic [ref=e271]: "Two alternatives with the trade-offs laid out: time against money."
+            - listitem [ref=e272]:
+              - button "04 Gia asks before acting Changing a booking costs money, so she waits for your confirmation." [ref=e273] [cursor=pointer]:
+                - generic [ref=e274]: "04"
+                - generic [ref=e275]: Gia asks before acting
+                - generic [ref=e276]: Changing a booking costs money, so she waits for your confirmation.
+            - listitem [ref=e277]:
+              - button "05 Done The change is made and confirmed. You stay in the loop the whole time." [ref=e278] [cursor=pointer]:
+                - generic [ref=e279]: "05"
+                - generic [ref=e280]: Done
+                - generic [ref=e281]: The change is made and confirmed. You stay in the loop the whole time.
+            - listitem [ref=e282]:
+              - button "! When she can't verifyAlternate If something is uncertain, Gia says so and suggests how to check." [ref=e283] [cursor=pointer]:
+                - generic [ref=e284]: "!"
+                - generic [ref=e285]: When she can't verifyAlternate
+                - generic [ref=e286]: If something is uncertain, Gia says so and suggests how to check.
+        - region "Gia conversation example" [ref=e288]:
+          - generic [ref=e289]:
+            - generic [ref=e291]: Gia
+            - generic [ref=e292]: Trip to New York
+          - generic [ref=e293]: My flight to New York was changed.
+          - generic [ref=e296]:
+            - generic [ref=e297]:
+              - generic [ref=e298]: Request
+              - generic [ref=e299]: 1 / 5
+            - generic [aria-hidden] [ref=e300]: Type a message…↑
+    - region [ref=e301]:
+      - generic [ref=e302]:
+        - generic [ref=e303]:
+          - generic [ref=e304]:
+            - paragraph [ref=e305]: She gets to know you
+            - heading "The more context you choose to share, the less you have to repeat." [level=2] [ref=e306]
+            - paragraph [ref=e307]: Gia can remember selected details across conversations. You decide what she keeps, and you can review or remove it at any time.
+          - tablist "Memory examples" [ref=e308]:
+            - tab "Future builder" [selected] [ref=e309] [cursor=pointer]
+            - tab "Professional" [ref=e310] [cursor=pointer]
+            - tab "Parent" [ref=e311] [cursor=pointer]
+            - tab "Ongoing conversation" [ref=e312] [cursor=pointer]
+        - tabpanel [ref=e313]:
+          - generic [ref=e320]:
+            - generic [ref=e321]: We are looking for a home with a shorter commute, room for a child, and a budget we already discussed.
+            - generic [ref=e322]:
+              - generic [ref=e323]: Gia
+              - generic [ref=e325]: Got it. I'll only show homes within the budget you set on Sep 12, under 30 minutes from your office, with at least three bedrooms.
+          - complementary "Memory" [ref=e326]:
+            - generic [ref=e327]:
+              - generic [ref=e328]: Memory
+              - generic [ref=e329]: 4 items
+            - list [ref=e330]:
+              - listitem [ref=e331]:
+                - generic [ref=e332]: Looking for a shorter commute
+                - generic [ref=e333]: Added Sep 12
+                - button "Forget this" [ref=e334] [cursor=pointer]
+              - listitem [ref=e335]:
+                - generic [ref=e336]: Needs room for a child
+                - generic [ref=e337]: Added Sep 12
+                - button "Forget this" [ref=e338] [cursor=pointer]
+              - listitem [ref=e339]:
+                - generic [ref=e340]: Budget agreed on Sep 12
+                - generic [ref=e341]: Added Sep 12
+                - button "Forget this" [ref=e342] [cursor=pointer]
+              - listitem [ref=e343]:
+                - generic [ref=e344]: Prefers neighborhoods near a park
+                - generic [ref=e345]: Added Sep 20
+                - button "Forget this" [ref=e346] [cursor=pointer]
+            - button "Edit memory" [ref=e348] [cursor=pointer]
+            - paragraph [ref=e349]: Only items you approve are saved.
+    - region [ref=e350]:
+      - generic [ref=e351]:
+        - generic [ref=e352]:
+          - paragraph [ref=e353]: Control, privacy & limits
+          - heading "Helpful does not mean automatic." [level=2] [ref=e354]
+          - paragraph [ref=e355]: Gia prepares, recommends and organizes. Important actions stay visible and in your hands. When she is unsure, needs more information or can't safely help, she says so.
+        - generic [ref=e356]:
+          - generic [ref=e357]:
+            - paragraph [ref=e362]: Share your aisle-seat preference?
+            - paragraph [ref=e363]: Gia wants to share your aisle-seat preference with a travel service to complete your booking.
+            - generic [ref=e364]:
+              - button "Allow once" [ref=e365] [cursor=pointer]
+              - button "Always allow" [ref=e366] [cursor=pointer]
+              - button "Don't share" [ref=e367] [cursor=pointer]
+            - paragraph [ref=e368]
+            - generic [ref=e369]:
+              - generic [ref=e370]:
+                - generic [ref=e371]: Asking first
+                - generic [ref=e372]: I can draft the message, but I need your approval before I send it.
+              - generic [ref=e373]:
+                - generic [ref=e374]: Being honest about uncertainty
+                - generic [ref=e375]: I found three possible answers, but I could not verify the source.
+              - generic [ref=e376]:
+                - generic [ref=e377]: Handing off
+                - generic [ref=e378]: This request needs a licensed or human expert. I can help you prepare the questions.
+          - generic [ref=e379]:
+            - heading "Activity history" [level=3] [ref=e380]
+            - paragraph [ref=e381]: Everything Gia did, in order. Nothing hidden.
+            - list [ref=e382]:
+              - listitem [ref=e383]:
+                - text: Drafted a message to Alex
+                - generic [ref=e384]: 2h ago
+                - generic [ref=e385]: Needs approval
+              - listitem [ref=e386]:
+                - text: Compared three travel options
+                - generic [ref=e387]: 3h ago
+                - generic [ref=e388]: Ready
+              - listitem [ref=e389]:
+                - text: Couldn't verify a school rating source
+                - generic [ref=e390]: Yesterday
+                - generic [ref=e391]: Flagged
+              - listitem [ref=e392]:
+                - text: Suggested a licensed tax advisor
+                - generic [ref=e393]: Yesterday
+                - generic [ref=e394]: Handed off
+              - listitem [ref=e395]:
+                - text: Summarized lease agreement, 14 pages
+                - generic [ref=e396]: Mon
+                - generic [ref=e397]: Ready
+        - generic [ref=e398]:
+          - generic [ref=e399]:
+            - heading "Available now" [level=3] [ref=e400]
+            - paragraph [ref=e401]: Research, summarize, organize, compare options, draft materials.
+          - generic [ref=e402]:
+            - heading "With your approval" [level=3] [ref=e403]
+            - paragraph [ref=e404]: Share selected information, send or book where supported, complete higher-impact actions.
+          - generic [ref=e405]:
+            - heading "Coming next" [level=3] [ref=e406]
+            - paragraph [ref=e407]: Additional autonomous workflows, integrations and capabilities as they are released.
+        - generic [ref=e408]:
+          - heading "What Gia can and cannot do" [level=3] [ref=e409]
+          - group [ref=e410]:
+            - generic "Can Gia act without asking me? +" [ref=e411] [cursor=pointer]
+          - group [ref=e412]:
+            - generic "What does Gia remember? +" [ref=e413] [cursor=pointer]
+          - group [ref=e414]:
+            - generic "What happens when Gia isn't sure? +" [ref=e415] [cursor=pointer]
+          - group [ref=e416]:
+            - generic "When does Gia hand off to a person? +" [ref=e417] [cursor=pointer]
+          - text: +
+    - region [ref=e418]:
+      - generic [ref=e419]:
+        - generic [ref=e420]:
+          - generic [ref=e421]:
+            - paragraph [ref=e422]: She can work with you
+            - heading "Use Gia for work that takes time, not just questions." [level=2] [ref=e423]
+            - paragraph [ref=e424]: "Gia turns a larger task into a sequence: gather, analyze, organize, draft, then bring it back for your review. Less routine work to carry alone."
+          - list [ref=e425]:
+            - listitem [ref=e426]:
+              - generic [ref=e427]: Leader
+              - generic [ref=e428]: Prepare a briefing before a meeting, organize travel options, turn notes into follow-ups.
+            - listitem [ref=e429]:
+              - generic [ref=e430]: Future builder
+              - generic [ref=e431]: Compare homes, summarize documents, track open questions, model budget scenarios.
+            - listitem [ref=e432]:
+              - generic [ref=e433]: Parent
+              - generic [ref=e434]: Organize the week, combine schedules, build a shopping list, surface conflicts.
+            - listitem [ref=e435]:
+              - generic [ref=e436]: Business
+              - generic [ref=e437]: Research a company, list sources, outline risks, prepare a presentation draft.
+        - generic "Example task workspace" [ref=e438]:
+          - generic [ref=e439]:
+            - paragraph [ref=e440]: Your goal
+            - paragraph [ref=e441]: Research Northwind Logistics before Thursday's meeting and prepare a short presentation.
+            - paragraph [ref=e442]: Your approvals
+            - list [ref=e443]:
+              - listitem [ref=e444]:
+                - text: Use public sources only
+                - generic [ref=e445]: Approved
+              - listitem [ref=e446]:
+                - text: Include last quarter's earnings call
+                - generic [ref=e447]: Approved
+              - listitem [ref=e448]:
+                - text: Share the draft with Maya
+                - generic [ref=e449]:
+                  - button "Approve" [ref=e450] [cursor=pointer]
+                  - button "Not yet" [ref=e451] [cursor=pointer]
+          - generic [ref=e452]:
+            - paragraph [ref=e453]: Gia's progress
+            - list [ref=e454]:
+              - listitem [ref=e455]:
+                - text: Gather sources
+                - generic [ref=e456]: 14 sources found
+                - generic [ref=e457]: Ready
+              - listitem [ref=e458]:
+                - text: Analyze recent changes
+                - generic [ref=e459]: New CEO, two acquisitions in 2026
+                - generic [ref=e460]: Ready
+              - listitem [ref=e461]:
+                - text: Outline risks
+                - generic [ref=e462]: 2 assumptions need your eye
+                - generic [ref=e463]: Needs review
+              - listitem [ref=e464]:
+                - text: Prepare presentation draft
+                - generic [ref=e465]: Slide 4 of 6
+                - generic [ref=e466]: Researching
+            - generic [ref=e469]:
+              - generic [ref=e470]:
+                - paragraph [ref=e471]: Sources
+                - generic [ref=e472]:
+                  - generic [ref=e473]: Annual report 2025
+                  - generic [ref=e474]: Q2 earnings call
+                  - generic [ref=e475]: Trade press (6)
+                  - generic [ref=e476]: Company blog
+                - paragraph [ref=e477]: Assumptions
+                - generic [ref=e478]:
+                  - paragraph [ref=e479]: Revenue figures for 2026 are estimates from trade press.
+                  - paragraph [ref=e480]: The acquisition of Halden Freight has closed.
+              - generic [ref=e481]:
+                - paragraph [ref=e482]: Draft
+                - list [ref=e483]:
+                  - listitem [ref=e484]: Company at a glance
+                  - listitem [ref=e485]: What changed this year
+                  - listitem [ref=e486]: Market position
+                  - listitem [ref=e487]: Risks to discuss
+                  - listitem [ref=e488]: Questions for Thursday
+                  - listitem [ref=e489]: Sources
+    - region [ref=e490]:
+      - generic [ref=e491]:
+        - generic [ref=e492]:
+          - paragraph [ref=e493]: More power, more tools
+          - heading "One Gia. More capability when you need it." [level=2] [ref=e494]
+          - paragraph [ref=e495]: Gia is the main product. Other Glonari services are tools she can bring into a task when they're relevant.
+        - generic [ref=e496]:
+          - generic [ref=e497]:
+            - figure [ref=e498]
+            - paragraph [ref=e501]: Explore homes and understand the practical monthly cost.
+            - generic [ref=e502]: Homes
+          - generic [ref=e503]:
+            - figure [ref=e504]
+            - paragraph [ref=e507]: Keep financial information and options organized in one place.
+            - generic [ref=e508]: Money
+          - generic [ref=e509]:
+            - figure [ref=e510]
+            - paragraph [ref=e513]: Connect with the right people or specialists when a task needs them.
+            - generic [ref=e514]: People & experts
+          - link "Unlock additional resources, capacity and capabilities for Gia. See what GLO adds GLO" [ref=e515] [cursor=pointer]:
+            - /url: glo.html
+            - figure [aria-hidden] [ref=e516]
+            - paragraph [ref=e520]: Unlock additional resources, capacity and capabilities for Gia.
+            - generic [ref=e521]: See what GLO adds
+            - generic [ref=e522]: GLO
+        - paragraph [ref=e523]: GLO access is subject to program terms.
+    - region [ref=e524]:
+      - generic [ref=e525]:
+        - generic [ref=e526]:
+          - paragraph [ref=e527]: Your Gia
+          - heading "This is your Gia. Start with one real thing you want to get done." [level=2] [ref=e528]
+          - paragraph [ref=e529]: Talk to her. Give her context. Review what she prepares. Let the relationship become more useful over time.
+          - list [ref=e530]:
+            - listitem [ref=e531]: "Everyday life: plan, compare, remember and organize."
+            - listitem [ref=e532]: "Work: research, prepare and follow through."
+            - listitem [ref=e533]: "Bigger decisions: keep the details together and explore options without losing the thread."
+          - generic [ref=e534]:
+            - generic [ref=e535]: Email address
+            - textbox "Email address" [ref=e536]:
+              - /placeholder: you@example.com
+            - button "Join the waitlist" [ref=e537] [cursor=pointer]
+          - paragraph [ref=e538]
+          - paragraph [ref=e539]:
+            - link "See Gia in action" [ref=e540] [cursor=pointer]:
+              - /url: "#in-action"
+        - figure [ref=e541]
+  - contentinfo [ref=e543]:
+    - generic [ref=e544]:
+      - generic [ref=e545]:
+        - generic [ref=e546]:
+          - link "Glonari, back to top" [ref=e547] [cursor=pointer]:
+            - /url: "#what"
+            - img "Glonari. Experience more." [ref=e549]
+          - paragraph [ref=e550]: Gia is your personal AI agent by Glonari.
+        - 'navigation "Footer: site" [ref=e551]':
+          - paragraph [ref=e552]: The site
+          - list [ref=e553]:
+            - listitem [ref=e554]:
+              - link "Meet Gia" [ref=e555] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e556]:
+              - link "Introducing GLO" [ref=e557] [cursor=pointer]:
+                - /url: glo.html
+            - listitem [ref=e558]:
+              - link "Global Connections" [ref=e559] [cursor=pointer]:
+                - /url: global-connections.html
+            - listitem [ref=e560]:
+              - link "How GLO Works" [ref=e561] [cursor=pointer]:
+                - /url: how-glo-works.html
+        - generic [ref=e562]:
+          - paragraph [ref=e563]: Membership
+          - list [ref=e564]:
+            - listitem [ref=e565]:
+              - link "Join the waitlist" [ref=e566] [cursor=pointer]:
+                - /url: "#join"
+      - paragraph [ref=e568]:
+        - strong [ref=e569]: Important information.
+        - text: GLO™ is Glonari’s Membership & Access Token. Qualifying GLO can give Gia access to additional resources under applicable program terms. GLO itself does not pay income, interest or yield, and does not guarantee appreciation, liquidity or resale. Not every capability described on this site is available today; each one is labeled with its current status.
+      - paragraph [ref=e570]: © 2026 Glonari.

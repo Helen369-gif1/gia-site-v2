@@ -55,8 +55,7 @@
 .hiw.is-live .hiw__card:not(.is-active) > * { filter: brightness(.74) saturate(.85); }
 
 .hiw__num { display: block; margin-bottom: 14px; font-family: var(--font-mono); font-size: 13px; font-weight: 600; letter-spacing: .1em; color: var(--gp-gold); }
-.hiw__title { margin: 0 0 8px; font-family: var(--font-display); font-size: clamp(24px, 2.2vw, 30px); font-weight: 500; line-height: 1.15; color: var(--gp-text); }
-.hiw__card--ask .hiw__title { font-size: clamp(30px, 3.2vw, 44px); line-height: 1.1; }
+.hiw__title { margin: 0 0 8px; font-size: clamp(20px, 2vw, 28px); font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; color: var(--gp-text); }
 .hiw__sub { margin: 0; font-size: 15px; line-height: 1.55; color: var(--gp-text-2); }
 .hiw__card--ask .hiw__sub { font-size: 17px; }
 .hiw svg { fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex: none; }
