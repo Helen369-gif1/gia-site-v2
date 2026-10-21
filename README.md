@@ -55,8 +55,7 @@ Introducing GLO also links straight to How GLO Works from its options section, a
                                assets/source/gia-original.png), the section 03 first/last frames and the
                                #how neighborhood photos (hiw-riverside, hiw-maple-heights, hiw-old-town)
     assets/art/                source SVGs of the card line drawings (.card__art); pages inline the same SVG so
-                               currentColor works (glo-uses-*: the corner marks (.card__photo-mark) on the Introducing GLO
-                               #what-it-enables card photos, no longer the main card art; hgw-option-*: How GLO Works
+                               currentColor works (glo-uses-*: former Introducing GLO #what-it-enables card art, no longer used on the page; hgw-option-*: How GLO Works
                                #your-options; hgw-layer-*: role marks in How GLO Works #three-layer, Gia's mark is her photo;
                                flow-*: 24px node icons (.flow__icon) in the chains of Introducing GLO 03, Global Connections 06
                                and How GLO Works 03, Gia's node shows her photo)
@@ -128,7 +127,7 @@ srcset and width/height to use in the page. Photos already processed are skipped
   Meet Gia #more-power, 16:9 at the top of the tool cards: mp-homes, mp-money, mp-people (800/1600); the GLO card has
   no photo, it shows its bolt drawing in a 16:9 art slot.
   Introducing GLO #what-it-enables, 3:2 at the top of each card: enables-personal, enables-economic,
-  enables-capabilities, enables-connections (800/1536), each with its glo-uses-* drawing as a corner mark (bottom right).
+  enables-capabilities, enables-connections (800/1536), photo only.
   Global Connections #gia-finds, 4:3 thumbnail left of the "Logistics market briefing" title: gc-project-port
   (800/1448; no parallax, it is product UI). Card photos must not show readable numbers, prices or charts.
 - Final photos (originals in assets/source/, optimized WebP + JPEG fallback in two sizes in assets/images/):

@@ -223,8 +223,7 @@
 /* ===== Card photo (optional, first child of a card; DS 8.1) =====
    figure.media-frame.card__photo with --ratio inline; 8px radius, 1px border, photo fills it (object-fit: cover,
    --focus sets object-position per photo). Parallax: data-parallax on the box, except inside product UI glass.
-   --art: the same slot holding a large line drawing (svg.draw-icon) instead of a photo.
-   __mark: a small dark glass chip in the bottom-right corner with the card's line drawing (64px wide at every width). */
+   --art: the same slot holding a large line drawing (svg.draw-icon) instead of a photo. */
 .card__photo { margin: 0 0 8px; }
 .card__photo .media-frame__box { border-radius: 8px; }
 .card__photo .media-frame__box > picture > img { object-position: var(--focus, 50% 50%); }
@@ -233,12 +232,6 @@
   background: radial-gradient(ellipse at 50% 50%, rgba(241, 167, 77, .12), transparent 65%), var(--gp-surface-2);
 }
 .card__photo--art svg { display: block; width: 64px; height: 64px; overflow: visible; }
-.card__photo-mark {
-  position: absolute; right: 8px; bottom: 8px; z-index: 1; display: block; padding: 6px 8px; border-radius: 6px;
-  border: 1px solid var(--gp-glass-border); background: rgba(15, 15, 14, .74);
-  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); color: var(--gp-gold); pointer-events: none;
-}
-.card__photo-mark > svg { display: block; width: 64px; height: auto; overflow: visible; }
 .card__photo.media-frame--placeholder .media-frame__box { padding: 12px; }
 
 /* ===== Flow: boxes joined by arrows (left to right; top to bottom at 768px and below) ===== */
