@@ -14,6 +14,7 @@ Static HTML/CSS/JS, no build step. Open `index.html` in a browser, or serve the 
     05  See Gia in action                  #in-action
     06  She gets to know you (Memory)      #memory
     07  Control, privacy & limits          #control
+                                           (vista: photo breather between #control and #work, not in the menu)
     08  She can work with you              #work
     09  More power, more tools             #more-power
     10  Final CTA                          #join
@@ -36,10 +37,11 @@ Introducing GLO also links straight to How GLO Works from its options section, a
     css/components.css         shared components: glass UI, chat atoms, status, card, split, log, tiers, task workspace,
                                final CTA, and (stage 3) page hero, badge, flow, steps line, hub, accordion,
                                option card, ownership indicator, terms sheet, approval sheet, is/is not, notice,
-                               Gia core (photo in a gold ring), pulse diagram, card art (.card__art), card photo (.card__photo), quiet effects
+                               Gia core (photo in a gold ring), pulse diagram, card art (.card__art), card photo (.card__photo), quiet effects,
+                               full-width photo breather (.vista)
     css/shell.css              header, mobile menu, scroll progress, footer, logo
     css/pages/<page>.css       page-only sections (meet-gia, glo, global-connections, how-glo-works)
-    js/components.js           shared component behavior: approval sheet, play-once hero video (pages 2-4),
+    js/components.js           shared component behavior: approval sheet, play-once hero video (pages 2-4), loading of the .vista photos,
                                pulse diagrams [data-pulse] (wiring, pulses, card status; the hub's routes and scenario),
                                quiet effects switched on by attributes: [data-parallax], [data-stagger], [data-spotlight],
                                [data-draw], [data-shine]; card art (.card__art) and small line icons (svg.draw-icon)
@@ -64,7 +66,7 @@ Introducing GLO also links straight to How GLO Works from its options section, a
     docs/components.html       live reference of every shared component (open via the local server)
     tools/build-shell.py       writes the shared header, mobile menu and footer into all four pages
     tools/optimize-images.py   every new photo goes through it: moves the original to assets/source/, makes WebP + JPEG
-                               versions (about 800 and 1600px, never upscaled) in assets/images/
+                               versions (about 800 and 1600px, never upscaled; --full-bleed adds 2400px) in assets/images/
 
 Every page loads tokens, base, components, shell and its own page CSS, then js/site.js, js/components.js and its own page script.
 
@@ -92,6 +94,8 @@ It moves the original to assets/source/ (never overwrites an original already th
 `<name>-800` and `<name>-1600` (or the real size if smaller) as WebP (quality 78) and JPEG (-q:v 4), and prints the
 srcset and width/height to use in the page. Photos already processed are skipped (`--force` rebuilds their versions).
 `--check` rebuilds everything in a temp folder and compares it with assets/images/ without writing.
+`--full-bleed` also writes `<name>-2400` (same quality settings); only for the full-width photo breathers (`.vista`).
+`--check` rebuilds the 2400 version too for photos that have one.
 
 ## Notes
 
@@ -123,6 +127,13 @@ srcset and width/height to use in the page. Photos already processed are skipped
   mem-parent, mem-talk (800/1600, WebP + JPEG; originals in assets/source/). All four are in the markup, stacked; the tab
   handler in js/pages/meet-gia.js crossfades to the tab's photo. Fixed min-heights keep the panel from jumping between tabs.
 - Meet Gia #how neighborhood photos: hiw-riverside, hiw-maple-heights, hiw-old-town (800px versions, card 02 only; card 03 has no photos).
+- Photo breathers (shared `.vista`, design system 7.5): one full-width photo band per page with one champagne line,
+  curtain reveal (photo fixed in a clip-path band). vista-meet-gia (index.html, #control -> #work), vista-glo
+  (glo.html, #your-options -> #global-connections), vista-gc (global-connections.html, #authorize -> #gia-works),
+  vista-hgw (how-glo-works.html, #your-options -> #gc-vs-market); 800/1600/2400 WebP + JPEG made with
+  `--full-bleed`, originals (PNG 3344x1882) in assets/source/. Not in the shell section menu. Contrast of the line
+  against the brightest pixel behind it, 1440x900 / 390x844: Meet Gia 3.22 / 3.59, Introducing GLO 3.54 / 3.48,
+  Global Connections 3.39 / 3.32, How GLO Works 4.10 / 3.97 (3:1 needed); a replacement photo must be re-measured.
 - Card photos (shared `.card__photo`, design system 8.1; originals in assets/source/, WebP + JPEG in assets/images/):
   Meet Gia #more-power, 16:9 at the top of the tool cards: mp-homes, mp-money, mp-people (800/1600); the GLO card has
   no photo, it shows its bolt drawing in a 16:9 art slot.
