@@ -324,7 +324,15 @@
       </div>
     </div>
     <div class="glass mem is-active" id="mem-panel" role="tabpanel">
-      <div class="mem__chat" id="mem-chat"></div>
+      <div class="mem__main">
+        <div class="mem__photo" aria-hidden="true">
+          <picture class="is-shown" data-mem-photo="builder"><source type="image/webp" srcset="assets/images/mem-builder-800.webp 800w, assets/images/mem-builder-1600.webp 1600w" sizes="(max-width: 560px) 100vw, (max-width: 960px) 46vw, 340px"><img src="assets/images/mem-builder-800.jpg" srcset="assets/images/mem-builder-800.jpg 800w, assets/images/mem-builder-1600.jpg 1600w" sizes="(max-width: 560px) 100vw, (max-width: 960px) 46vw, 340px" width="1600" height="724" loading="lazy" decoding="async" alt=""></picture>
+          <picture data-mem-photo="pro"><source type="image/webp" srcset="assets/images/mem-pro-800.webp 800w, assets/images/mem-pro-1600.webp 1600w" sizes="(max-width: 560px) 100vw, (max-width: 960px) 46vw, 340px"><img src="assets/images/mem-pro-800.jpg" srcset="assets/images/mem-pro-800.jpg 800w, assets/images/mem-pro-1600.jpg 1600w" sizes="(max-width: 560px) 100vw, (max-width: 960px) 46vw, 340px" width="1600" height="724" loading="lazy" decoding="async" alt=""></picture>
+          <picture data-mem-photo="parent"><source type="image/webp" srcset="assets/images/mem-parent-800.webp 800w, assets/images/mem-parent-1600.webp 1600w" sizes="(max-width: 560px) 100vw, (max-width: 960px) 46vw, 340px"><img src="assets/images/mem-parent-800.jpg" srcset="assets/images/mem-parent-800.jpg 800w, assets/images/mem-parent-1600.jpg 1600w" sizes="(max-width: 560px) 100vw, (max-width: 960px) 46vw, 340px" width="1600" height="724" loading="lazy" decoding="async" alt=""></picture>
+          <picture data-mem-photo="talk"><source type="image/webp" srcset="assets/images/mem-talk-800.webp 800w, assets/images/mem-talk-1600.webp 1600w" sizes="(max-width: 560px) 100vw, (max-width: 960px) 46vw, 340px"><img src="assets/images/mem-talk-800.jpg" srcset="assets/images/mem-talk-800.jpg 800w, assets/images/mem-talk-1600.jpg 1600w" sizes="(max-width: 560px) 100vw, (max-width: 960px) 46vw, 340px" width="1600" height="724" loading="lazy" decoding="async" alt=""></picture>
+        </div>
+        <div class="mem__chat" id="mem-chat"></div>
+      </div>
       <aside class="mem__side" aria-label="Memory">
         <div class="mem__head"><span class="h4">Memory</span><span class="caption" id="mem-count"></span></div>
         <ul class="mem__list" id="mem-list"></ul>

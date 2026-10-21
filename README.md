@@ -86,6 +86,8 @@ Rule: every new photo goes through `tools/optimize-images.py` (needs ffmpeg and 
     python3 tools/optimize-images.py            # every new photo in assets/images/
     python3 tools/optimize-images.py <file>     # one file; --name <base> sets the output name
 
+On Windows the command is `python`, not `python3` (for every script in tools/).
+
 It moves the original to assets/source/ (never overwrites an original already there), writes
 `<name>-800` and `<name>-1600` (or the real size if smaller) as WebP (quality 78) and JPEG (-q:v 4), and prints the
 srcset and width/height to use in the page. Photos already processed are skipped (`--force` rebuilds their versions).
@@ -117,6 +119,9 @@ srcset and width/height to use in the page. Photos already processed are skipped
 - Placeholders, Meet Gia: the FAQ question "Where is my data stored,
   and how do I delete it?" is hidden (`hidden` on its `details` in index.html) and waits for the answer from the product
   and legal teams: write the answer and remove `hidden`.
+- Meet Gia #memory photos: one per tab at the top of the panel's left column (`.mem__main`), mem-builder, mem-pro,
+  mem-parent, mem-talk (800/1600, WebP + JPEG; originals in assets/source/). All four are in the markup, stacked; the tab
+  handler in js/pages/meet-gia.js crossfades to the tab's photo. Fixed min-heights keep the panel from jumping between tabs.
 - Meet Gia #how neighborhood photos: hiw-riverside, hiw-maple-heights, hiw-old-town (800px versions, card 02 only; card 03 has no photos).
 - Final photos (originals in assets/source/, optimized WebP + JPEG fallback in two sizes in assets/images/):
   Global Connections: gc-hero-workspace-800/-1600; How GLO Works: hgw-choice-panel-800 (600x800) / -1448 (full size).

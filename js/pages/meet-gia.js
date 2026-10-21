@@ -277,6 +277,7 @@
   const memCount = document.getElementById('mem-count');
   const memToast = document.getElementById('mem-toast');
   const memEdit = document.getElementById('mem-edit');
+  const memPhotos = [...document.querySelectorAll('[data-mem-photo]')];
   const tabs = [...document.querySelectorAll('.tab')];
   let memKey = 'builder', editing = false;
   const esc = (s) => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -292,6 +293,7 @@
   tabs.forEach(t => t.addEventListener('click', () => {
     tabs.forEach(x => { x.setAttribute('aria-selected', String(x === t)); x.tabIndex = x === t ? 0 : -1; });
     memKey = t.dataset.mem; editing = false; memToast.textContent = ''; drawMem();
+    memPhotos.forEach(p => p.classList.toggle('is-shown', p.dataset.memPhoto === memKey));
   }));
   document.querySelector('.tabs').addEventListener('keydown', (e) => {
     const i = tabs.findIndex(t => t.getAttribute('aria-selected') === 'true');
