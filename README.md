@@ -7,7 +7,8 @@ Static HTML/CSS/JS, no build step. Open `index.html` in a browser, or serve the 
 ## Meet Gia sections (see docs/wireframes/Meet_Gia_Revised_Wireframe_EN.docx)
 
     01  Hero, scroll video                 #what
-    02  How it works                       #how
+    02  How it works                       #how        (asymmetric: 01 conversation left, 02 research and 03 review right;
+                                                       cards appear 01 -> 02 -> 03, js/pages/meet-gia.js)
     03  A Gia that works with you          #with-you   (short breather, 40/60 text + video that plays once)
     04  How people use Gia                 #people
     05  See Gia in action                  #in-action
@@ -44,14 +45,15 @@ Introducing GLO also links straight to How GLO Works from its options section, a
                                [data-draw], [data-shine]; card art (.card__art) and small line icons (svg.draw-icon)
                                draw themselves (design system 9.2 and 10.1; demos in docs/components.html)
     js/site.js                 shared shell: menu, scroll progress, active section, reveal; exposes window.GiaSite
-    js/pages/meet-gia.js       Meet Gia: hero scroll video, section 03 video, In action, Memory, permissions, approval, waitlist
+    js/pages/meet-gia.js       Meet Gia: hero scroll video, How it works card sequence, section 03 video, In action, Memory, permissions, approval, waitlist
     js/pages/meet-gia-frames.js  list of Meet Gia hero video frames
     js/pages/<page>.js         page scripts for the other pages (how-glo-works.js: the ecosystem pulse diagram)
     assets/logo/               Glonari mark, horizontal and stacked lockups, favicons
     assets/hero-frames/        96 WebP frames of the Meet Gia hero video (scroll-scrubbed on a canvas)
     assets/video/              works-with-you.mp4, the Meet Gia section 03 video (plays once per visit)
     assets/images/             optimized photos (gia.webp + gia.png fallback, 400x400 face crop of
-                               assets/source/gia-original.png) and the section 03 first/last frames
+                               assets/source/gia-original.png), the section 03 first/last frames and the
+                               #how neighborhood photos (hiw-riverside, hiw-maple-heights, hiw-old-town)
     assets/art/                source SVGs of the card line drawings (.card__art); pages inline the same SVG so
                                currentColor works (glo-uses-*: Introducing GLO #what-it-enables; hgw-option-*: How GLO Works
                                #your-options; hgw-layer-*: role marks in How GLO Works #three-layer, Gia's mark is her photo;
@@ -115,6 +117,7 @@ srcset and width/height to use in the page. Photos already processed are skipped
 - Placeholders, Meet Gia: the FAQ question "Where is my data stored,
   and how do I delete it?" is hidden (`hidden` on its `details` in index.html) and waits for the answer from the product
   and legal teams: write the answer and remove `hidden`.
+- Meet Gia #how neighborhood photos: hiw-riverside, hiw-maple-heights, hiw-old-town (800px versions used in cards 02 and 03).
 - Final photos (originals in assets/source/, optimized WebP + JPEG fallback in two sizes in assets/images/):
   Global Connections: gc-hero-workspace-800/-1600; How GLO Works: hgw-choice-panel-800 (600x800) / -1448 (full size).
   Introducing GLO final CTA: final-glo-800/-1600. Introducing GLO #what-glo-is (right of the text, 16:9): glo-resources-800/-1600.

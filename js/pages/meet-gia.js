@@ -36,6 +36,54 @@
     }
   }
 
+  /* ---------- How it works: cards appear 01 -> 02 -> 03 ----------
+     Each card appears when it is in view and at least STEP_GAP after the previous one; its content follows
+     line by line (.hiw__in, --i). The newest card is active, the others stay calmer; 03 stays active at the end.
+     When the block leaves the screen completely, it resets and plays again on the next visit.
+     Reduced motion -> everything is shown at once, 03 active. */
+  const hiw = document.querySelector('[data-hiw]');
+  if (hiw) {
+    const cards = [...hiw.querySelectorAll('.hiw__card')];
+    const STEP_GAP = 650;
+    const setActive = (i) => cards.forEach((c, k) => c.classList.toggle('is-active', k === i));
+    cards.forEach(c => c.querySelectorAll('.hiw__in').forEach((el, k) => el.style.setProperty('--i', k)));
+    if (reduce) {
+      cards.forEach(c => c.classList.add('is-shown'));
+      setActive(cards.length - 1);
+    } else {
+      hiw.classList.add('hiw-on');
+      const inView = new Set();
+      let shown = 0, lastAt = 0, timer = 0;
+      const next = () => {
+        clearTimeout(timer);
+        if (shown >= cards.length || !inView.has(shown)) return;
+        const wait = lastAt ? STEP_GAP - (performance.now() - lastAt) : 0;
+        if (wait > 0) { timer = setTimeout(next, wait); return; }
+        cards[shown].classList.add('is-shown');
+        setActive(shown);
+        hiw.classList.add('is-live');
+        shown++;
+        lastAt = performance.now();
+        next();
+      };
+      const cardIO = new IntersectionObserver((entries) => {
+        entries.forEach(en => {
+          const i = cards.indexOf(en.target);
+          if (en.isIntersecting) inView.add(i); else inView.delete(i);
+        });
+        next();
+      }, { rootMargin: '0px 0px -12% 0px', threshold: 0.2 });
+      cards.forEach(c => cardIO.observe(c));
+      new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting || !shown) return;
+        clearTimeout(timer);
+        shown = 0; lastAt = 0;
+        hiw.classList.remove('is-live');
+        cards.forEach(c => c.classList.remove('is-shown', 'is-active'));
+      }).observe(hiw);
+    }
+  }
+
   /* ---------- Hero scroll video (frame sequence on canvas) ---------- */
   const hero = document.querySelector('.hero');
   const canvas = document.querySelector('.hero__canvas');
