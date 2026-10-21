@@ -36,7 +36,7 @@ Introducing GLO also links straight to How GLO Works from its options section, a
     css/components.css         shared components: glass UI, chat atoms, status, card, split, log, tiers, task workspace,
                                final CTA, and (stage 3) page hero, badge, flow, steps line, hub, accordion,
                                option card, ownership indicator, terms sheet, approval sheet, is/is not, notice,
-                               Gia core (photo in a gold ring), pulse diagram, card art (.card__art), quiet effects
+                               Gia core (photo in a gold ring), pulse diagram, card art (.card__art), card photo (.card__photo), quiet effects
     css/shell.css              header, mobile menu, scroll progress, footer, logo
     css/pages/<page>.css       page-only sections (meet-gia, glo, global-connections, how-glo-works)
     js/components.js           shared component behavior: approval sheet, play-once hero video (pages 2-4),
@@ -55,7 +55,8 @@ Introducing GLO also links straight to How GLO Works from its options section, a
                                assets/source/gia-original.png), the section 03 first/last frames and the
                                #how neighborhood photos (hiw-riverside, hiw-maple-heights, hiw-old-town)
     assets/art/                source SVGs of the card line drawings (.card__art); pages inline the same SVG so
-                               currentColor works (glo-uses-*: Introducing GLO #what-it-enables; hgw-option-*: How GLO Works
+                               currentColor works (glo-uses-*: the corner marks (.card__photo-mark) on the Introducing GLO
+                               #what-it-enables card photos, no longer the main card art; hgw-option-*: How GLO Works
                                #your-options; hgw-layer-*: role marks in How GLO Works #three-layer, Gia's mark is her photo;
                                flow-*: 24px node icons (.flow__icon) in the chains of Introducing GLO 03, Global Connections 06
                                and How GLO Works 03, Gia's node shows her photo)
@@ -123,6 +124,13 @@ srcset and width/height to use in the page. Photos already processed are skipped
   mem-parent, mem-talk (800/1600, WebP + JPEG; originals in assets/source/). All four are in the markup, stacked; the tab
   handler in js/pages/meet-gia.js crossfades to the tab's photo. Fixed min-heights keep the panel from jumping between tabs.
 - Meet Gia #how neighborhood photos: hiw-riverside, hiw-maple-heights, hiw-old-town (800px versions, card 02 only; card 03 has no photos).
+- Card photos (shared `.card__photo`, design system 8.1; originals in assets/source/, WebP + JPEG in assets/images/):
+  Meet Gia #more-power, 16:9 at the top of the tool cards: mp-homes, mp-money, mp-people (800/1600); the GLO card has
+  no photo, it shows its bolt drawing in a 16:9 art slot.
+  Introducing GLO #what-it-enables, 3:2 at the top of each card: enables-personal, enables-economic,
+  enables-capabilities, enables-connections (800/1536), each with its glo-uses-* drawing as a corner mark (bottom right).
+  Global Connections #gia-finds, 4:3 thumbnail left of the "Logistics market briefing" title: gc-project-port
+  (800/1448; no parallax, it is product UI). Card photos must not show readable numbers, prices or charts.
 - Final photos (originals in assets/source/, optimized WebP + JPEG fallback in two sizes in assets/images/):
   Global Connections: gc-hero-workspace-800/-1600; How GLO Works: hgw-choice-panel-800 (600x800) / -1448 (full size).
   Introducing GLO final CTA: final-glo-800/-1600. Introducing GLO #what-glo-is (right of the text, 16:9): glo-resources-800/-1600.

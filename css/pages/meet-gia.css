@@ -312,7 +312,6 @@
 .tools { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
 .tool { padding: 32px 28px; display: flex; flex-direction: column; gap: 16px; transition: border-color .25s var(--ease); }
 .tool:hover { border-color: var(--gp-gold-dark); }
-.tool svg { color: var(--gp-gold-mid); }
 .tool__text { font-size: 18px; font-weight: 500; line-height: 1.45; margin: 0; color: var(--gp-text); }
 .tool__name { margin-top: auto; font-family: var(--font-mono); font-size: 12px; font-weight: 600; letter-spacing: .08em; color: var(--gp-copper); }
 .tool--link { text-decoration: none; color: inherit; }
